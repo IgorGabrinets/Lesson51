@@ -10,16 +10,20 @@ import java.util.Scanner;
 public class HomeWork2111_Level2 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Input fist number: ");
+        System.out.println("Input fist number and press ENTER");
+
         int first = scanner.nextInt();
-        System.out.println("Input second number: ");
+        System.out.println("Input second number and press ENTER");
+
         int second = scanner.nextInt();
         if (first == 36 && second == 17) {
             System.out.println("JACKPOT!!!");
         } else if (first == 36 && second != 17)
             System.out.println("Small prize!!!");
+
         else if (first != 36 && second == 17)
             System.out.println("Small prize!!!");
+
         else if (first != 36 && second != 17)
             System.out.println("You lost everything \uD83D\uDE31");
     }
